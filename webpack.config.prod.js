@@ -41,8 +41,8 @@ module.exports = {
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      favicon: "./src/assets/Favicon.ico",
+      template: path.resolve(__dirname, "./src/index.html"),
+      favicon: path.resolve(__dirname, "src/assets/Favicon.ico"),
       minify: {
         // see https://github.com/kangax/html-minifier#options-quick-reference
         removeComments: true,
