@@ -1,0 +1,32 @@
+{
+  "name": "logout",
+  "version": "1.0.0",
+  "description": "LogOut from your daily business and dive in to your outdoor activities.",
+  "main": "/src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open",
+    "start": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickvilliger/logout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickvilliger/logout/issues"
+  },
+  "homepage": "https://github.com/patrickvilliger/logout#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2"
+  },
+  "dependencies": {}
+}
