@@ -1,8 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+process.env.NODE_ENV = "development";
+
 module.exports = {
   mode: "development",
+  target: "web",
   entry: {
     app: path.resolve(__dirname, "src", "index.tsx")
   },
@@ -22,6 +25,14 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
+  },
+  devServer: {
+    stats: "minimal",
+    overlay: true,
+    historyApiFallback: true,
+    disableHostCheck: true,
+    headers: { "Access-Control-Allow-Origin": "*" },
+    https: false
   },
   plugins: [
     new HtmlWebpackPlugin({
